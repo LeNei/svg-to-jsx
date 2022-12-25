@@ -22,7 +22,7 @@ fn main() -> std::io::Result<()> {
             .jsx
             .file_name()
             .and_then(|name| name.to_str())
-            .unwrap_or(&"Icon")
+            .unwrap_or("Icon")
             .to_string(),
     };
     //Read SVG from file
